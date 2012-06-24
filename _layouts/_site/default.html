@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }} - {{ site.name }}</title>
+    <meta name="author" content="Rei" />
+    <link href="http://{{ site.host }}/atom.xml" rel="alternate" title="Subscribe to RSS Feed" type="application/atom+xml" />
+    <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+    <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+    <script src="http://yandex.st/highlightjs/6.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/6.1/styles/github.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div class="site">
+      <div class="title">
+        <a href="/">{{ site.name }}</a>
+        <a class="extra" href="/">首页</a>
+        <a class="extra" href="/posts/">日 志</a>
+        <a class="extra" href="#">About</a>
+      </div>
+
+      {{ content }}
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+          hwywhywl<br />
+          hwywhywl@gmail.com
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+          <a href="http://github.com/hwywhywl">github.com/hwywhywl</a><br />
+          </p>
+        </div>
+        <div class="rss">
+          <a href="http://{{ site.host }}/atom.xml">订阅全站</a>
+          <a href="http://{{ site.host }}/tech/atom.xml">日 志</a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
+  </body>
+</html>
