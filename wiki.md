@@ -10,3 +10,5 @@ title: Wiki
   [图片压缩](https://github.com/doda/imagy/tree/master/imagy)
 
   [安卓,Apple服务器端推送平台](https://github.com/monnand/uniqush)
+
+  [Mysql 扩展框架vitess](http://code.google.com/p/vitess/)
