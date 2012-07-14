@@ -12,3 +12,7 @@ title: Wiki
   [安卓,Apple服务器端推送平台](https://github.com/monnand/uniqush)
 
   [Mysql 扩展框架vitess](http://code.google.com/p/vitess/)
+
+##Mysql 相关
+  [MySQL数据库安全配置](http://www.xfocus.net/articles/200203/368.html)
+
