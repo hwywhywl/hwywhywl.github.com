@@ -16,3 +16,7 @@ title: Wiki
 ##Mysql 相关
   [MySQL数据库安全配置](http://www.xfocus.net/articles/200203/368.html)
 
+##使用手册
+  [gunicorn](http://gunicorn.org/configure.html)
+
+  [supervistor](http://supervisord.org/configuration.html#group-x-section-settings)
