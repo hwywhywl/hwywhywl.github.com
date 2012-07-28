@@ -17,7 +17,7 @@ tags:
 Python 类派生object 与 不派生至 object 还是有很大的区别的，当然我这里并不想深入python类内部机制，知识想浅浅说明在实际应用中的对比，
 当一个类不继承object是，会出现一些莫名其妙的状况，例如，你为一个类定义一个描述器
 
-    
+<pre><code>        
 class Column:
     def __get__(self, instance, owner):
         print 'Enter __get__'
@@ -37,7 +37,7 @@ class Table:
 >>> Table.id
 <__main__.Column instance at 0xfff378ec>
 >>>
-    
+</code></pre>    
 
 以上例子我使用数据库表和列的抽象成类表达，当你执行col = Table.id时候，并没有实现Column的描述器，也就是说并没有调用__get__函数，为什么呢，
 我们对Column改造一下：
