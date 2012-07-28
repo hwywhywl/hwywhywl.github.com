@@ -42,6 +42,7 @@ class Table:
 以上例子我使用数据库表和列的抽象成类表达，当你执行col = Table.id时候，并没有实现Column的描述器，也就是说并没有调用__get__函数，为什么呢，
 我们对Column改造一下：
     
+<pre><code>        
 class Column(object):
     def __get__(self, instance, owner):
         print 'Enter __get__'
@@ -61,6 +62,7 @@ class Column(object):
 Enter __get__
 <__main__.Column object at 0xfff3792c>
 >>>
+</code></pre>    
 
 可以看到已经进入到描述器了。
 
