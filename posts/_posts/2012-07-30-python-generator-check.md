@@ -8,7 +8,6 @@ tags:
 头疼如何判断生成器变量，例如定义如下生成器
 
 <pre><code>
-
 def _generator():
     yield 1
 
@@ -29,16 +28,13 @@ NameError: name 'generator' is not defined
  'LambdaType', 'ListType', 'LongType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'NoneType',
  'NotImplementedType', 'ObjectType', 'SliceType', 'StringType', 'StringTypes', 'TracebackType', 'TupleType',
  'TypeType', 'UnboundMethodType', 'UnicodeType', 'XRangeType', '__builtins__', '__doc__', '__file__', '__name__', '__package__']
-
 </code></pre>
 
 发现types 里面有一个GeneratorType，遂尝试
 
 <pre><code>
-
 >>> isinstance(gen, types.GeneratorType)
 True
-
 </code></pre>
 
 其实还可以用inspect.isgenerator
