@@ -1,6 +1,6 @@
 --- 
 layout: post
-title: python 内部机制的理解
+title: python 如何判断生成器类型
 tags:
 - python
 ---
@@ -8,6 +8,7 @@ tags:
 头疼如何判断生成器变量，例如定义如下生成器
 
 <pre><code>
+
 def _generator():
     yield 1
 
@@ -23,6 +24,7 @@ NameError: name 'generator' is not defined
 
 >>> dir(types)
 ['BooleanType', 'BufferType', 'BuiltinFunctionType', 'BuiltinMethodType', 'ClassType', 'CodeType', 'ComplexType', 'DictProxyType', 'DictType', 'DictionaryType', 'EllipsisType', 'FileType', 'FloatType', 'FrameType', 'FunctionType', 'GeneratorType', 'GetSetDescriptorType', 'InstanceType', 'IntType', 'LambdaType', 'ListType', 'LongType', 'MemberDescriptorType', 'MethodType', 'ModuleType', 'NoneType', 'NotImplementedType', 'ObjectType', 'SliceType', 'StringType', 'StringTypes', 'TracebackType', 'TupleType', 'TypeType', 'UnboundMethodType', 'UnicodeType', 'XRangeType', '__builtins__', '__doc__', '__file__', '__name__', '__package__']
+
 </code></pre>
 
 发现types 里面有一个GeneratorType，遂尝试
