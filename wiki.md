@@ -13,6 +13,8 @@ title: Wiki
 
   [Mysql 扩展框架vitess](http://code.google.com/p/vitess/)
 
+  [python ACL 基于角色访问控制模块](http://github.tonyseek.com/simple-rbac/)
+
 ##Mysql 相关
   [MySQL数据库安全配置](http://www.xfocus.net/articles/200203/368.html)
 
