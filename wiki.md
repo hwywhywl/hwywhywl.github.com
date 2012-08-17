@@ -15,6 +15,8 @@ title: Wiki
 
   [python ACL 基于角色访问控制模块](http://github.tonyseek.com/simple-rbac/)
 
+  [HTML5开发的数据可视化工具](http://www.humblesoftware.com/finance/index)
+
 ##Mysql 相关
   [MySQL数据库安全配置](http://www.xfocus.net/articles/200203/368.html)
 
@@ -22,3 +24,4 @@ title: Wiki
   [gunicorn](http://gunicorn.org/configure.html)
 
   [supervistor](http://supervisord.org/configuration.html#group-x-section-settings)
+
